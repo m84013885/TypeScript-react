@@ -45,10 +45,10 @@ let tom3 = buildName('Tom')
 
 // 剩余参数(和es6的方式类型，表示剩余的所有参数)
 function push(array: any[], ...items: any[]) {
-    items.forEach(function(item) {
+    items.forEach(function (item) {
         array.push(item)
     });
 }
 
-let a = []
+let a: number[] = []
 push(a, 1, 2, 3)
