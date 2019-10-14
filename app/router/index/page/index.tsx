@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import './type.ts'
 
-const Main = () => {
+const Main: () => any  = () => {
   return (
     <div>123</div>
   )
