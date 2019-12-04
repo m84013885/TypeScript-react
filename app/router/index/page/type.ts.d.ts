@@ -1,1 +1,0 @@
-export function getLength(something: string | number): number
