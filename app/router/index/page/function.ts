@@ -1,4 +1,5 @@
 // 简单的函数表达式
+// 参数类型与返回类型
 function sum(num1: number, num2: number): number {
     return num1 + num2
 }
@@ -13,18 +14,17 @@ let mySum2: (x: number, y: number) => number = function (x: number, y: number): 
     return x + y
 }
 // 首先要输入mySum2的类型，类型是函数类型，而函数类型包括输入的内容(x: number, y: number)，与输出的结果number，中间用=>表示是定义函数定义特有的符号
-
 // 接口的方式定义函数，更为清晰
 interface SearchFunc {
     (source: string, subString: string): boolean
 }
-
 let mySearch: SearchFunc
 mySearch = function (source: string, subString: string) {
     return source.search(subString) !== -1
 }
 
 // 可选参数
+// 需要注意可选参数不能放在必须参数的前面
 function buildName(firstName: string, lastName?: string) {
     if (lastName) {
         return firstName + ' ' + lastName
@@ -34,7 +34,6 @@ function buildName(firstName: string, lastName?: string) {
 }
 let tomcat = buildName('Tom', 'Cat')
 let tom1 = buildName('Tom')
-// 需要注意可选参数不能放在必须参数的前面
 
 // 参数默认值
 function buildName1(firstName: string, lastName: string = 'Cat') {

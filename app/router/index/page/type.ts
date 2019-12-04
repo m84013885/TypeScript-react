@@ -18,12 +18,12 @@ let myName: string = 'Tom'
 let sentence: string = `Hello typescript`
 
 // 空值
+// 返回空值的函数
 function alertName(): void {
     alert('My name is Tom')
 }
 // 默认空值
 let unusable: void = undefined
-
 // Null 和 Undefined
 let u: undefined = undefined
 let n: null = null
@@ -64,7 +64,7 @@ function getLength(something: string | number): number {
         return something.toString().length;
     }
 }
-
+export { getLength }
 // 指定对象类型（指定形状的类型）
 interface Object {
     name: string
@@ -99,7 +99,7 @@ let tom: Person1 = {
     name: 'Tom',
     age: '25',
     gender: 'male'
-};
+}
 // 只读属性
 interface Person2 {
     readonly id: number;
@@ -112,9 +112,12 @@ let tom2: Person2 = {
     id: 89757,
     name: 'Tom',
     gender: 'male'
-};
+}
 
 // 数组类型
-let fibonacci: number[] = [1, 1, 2, 3, 5]
+let fibonacciNum: number[] = [1, 1, 2, 3, 5]
+let fibonacciStr: string[] = ['1', '2', '3', '4', '5']
+let fibonacciBool: boolean[] = [true, false]
+let fibonacciVoid: void[] = [undefined, null]
 // any在数组里的应用
 let list: any[] = ['xcatliu', 25, { website: 'http://xcatliu.com' }]
