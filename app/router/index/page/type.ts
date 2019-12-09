@@ -64,7 +64,6 @@ function getLength(something: string | number): number {
         return something.toString().length;
     }
 }
-export { getLength }
 // 指定对象类型（指定形状的类型）
 interface Object {
     name: string
