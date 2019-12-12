@@ -1,0 +1,11 @@
+.swiperContainer{
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.swiperContent{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+}

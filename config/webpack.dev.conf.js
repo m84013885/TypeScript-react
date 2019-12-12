@@ -50,13 +50,7 @@ const config = webpackMerge(commonConfig, {
       },
       {
         test: new RegExp(`^(.*\\.common).*\\.css`),
-        use: ['style-loader',{
-          loader: 'typings-for-css-modules-loader',
-          options: {
-            modules: true,
-            namedExport: true
-          }
-        }, 'css-loader', 'postcss-loader'],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
         include: [appDir],
         exclude: [nodeModuleDir]
       },

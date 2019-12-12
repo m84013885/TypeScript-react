@@ -1,3 +1,7 @@
+## 2019-12-12
+加入部分公共组件(js)
+删除typings-for-css-modules-loader
+
 ## 2019-12-4
 完善引入模块的问题
 
