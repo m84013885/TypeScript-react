@@ -13,7 +13,7 @@ let mySum1 = function (x: number, y: number): number {
 let mySum2: (x: number, y: number) => number = function (x: number, y: number): number {
     return x + y
 }
-// 首先要输入mySum2的类型，类型是函数类型，而函数类型包括输入的内容(x: number, y: number)，与输出的结果number，中间用=>表示是定义函数定义特有的符号
+// 首先要输入mySum2的类型，类型是函数类型，而函数类型包括输入的内容(x: number, y: number)，与输出的结果number，中间用=>表示是定义函数定义特有的符号
 // 接口的方式定义函数，更为清晰
 interface SearchFunc {
     (source: string, subString: string): boolean
